@@ -1,59 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Calculadora Basal</title>
-  </head>
-  <body>
-    <div class="contenedor2"  class="caja">
-      <br> <br> <br> <br> <br> <br> <br>
-      <h1>Como se calcula? </h1>
-      <ul>
-          <li><p>De Okg a 10kg, se calcula 100cc por cada kilo.</p></li>
-          <li><p>Se suman 50cc por cada kilo de peso por
-            arriba dc 10kg, hasta 20kg</p></li>
-            <li><p>De 20kg vera arnba. se suman 20cc por
-            cada kilo adicional</p></li>
-      </ul>
-      
-    </div>
-    <div class="contenedor" class="caja">
-        <h1>Hidratacion Basal</h1>
-        <form action="" name="frm">
-            <input
-            type="text"
-            name="calc"
-            value=""
-            placeholder="Ingrese su peso en Kg: "
-            />
-        <button type="button" onclick="Calcular()">Calcular</button>
-        <table>
-          <tr>
-            <th>    Cuando el niño tiene hasta 30kg</th>
-            <th>    Valor</th>
-          </tr>
-          <tr>
-            <td>Su peso es</td>
-            <td id="peso"></td>
-          </tr>
-          <tr>
-            <td>Su volumen diario debe ser</td>
-            <td id="volDia"></td>
-          </tr>
-          <tr>
-            <td>Mantenimiento</td>
-            <td id="mante"></td>
-          </tr>
-          <tr>
-            <td>m+m/2</td>
-            <td id="manteMediomante"></td>
-          </tr>
-        </table>
-        <p id="parra"></p>
-      </form>
-    </div>
-    <script src="index.js"></script>
-  </body>
+<html>
+	<head>
+        <title>Calculadora de hidratación</title>
+    </head>
+	<body>
+        <div>
+            <div>
+                <h1>Hidratación Basal</h1>
+                <input type="number" placeholder="Peso en kg" />
+                <p>* Debe completar todos los datos</p>
+                <button>Calcular</button>
+                <p>71cc/h</p>
+                <p>m+m/2 : 105cc/h</p>
+            </div>
+            <div>
+                <h1>¿Como se calcula?</h1>
+                <ul>
+                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
