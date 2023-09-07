@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #add0e3;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 380px;
+    width: 400px;
+    
+}
+.contenedor2 {
+    /* text-align: center; */
+    background-color: #f2f2f2; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    width: 470px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"] {
+    width: 61%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Cambio de color de fondo y borde al enfocar el input */
+  input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #f0f0f0;
+    outline: none;
+  }
+  
+  /* Estilo para un input de tipo "text" deshabilitado */
+  input[type="text"]:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+  }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#parra {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Encabezado de la tabla */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  /* Celdas de la tabla */
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Cambio de color de fila al pasar el ratón por encima */
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Alternancia de colores de fila para una mejor legibilidad */
+  tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilo para la primera columna (si es necesario) */
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Estilo para una celda específica por clase */
+  .celda-especial {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  /* Estilo para una celda específica por identificador */
+  #celda-destacada {
+    background-color: #ff5722;
+    color: #fff;
+  }
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.caja {
+    width: 100%; /* Ocupar todo el ancho del contenedor padre */
+    padding: 20px; /* Espacio interno alrededor de cada caja */
+    margin-bottom: 20px; /* Espacio entre las cajas */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
