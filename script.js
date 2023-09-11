@@ -21,7 +21,7 @@ const FLU = document.getElementById("flu");
 const MAN = document.getElementById("man");
 
 CALCULAR.addEventListener("click", () => {
-  const DATO = parseInt(document.getElementById("peso").value);
+  let DATO = parseInt(document.getElementById("peso").value);
 
   //validamos que se cargue un dato:
   if (DATO > 0 && DATO <= 30) {
@@ -34,11 +34,12 @@ CALCULAR.addEventListener("click", () => {
       mantenimiento +
       " cc/hr<br>" +
       "m+m/2: " +
-      par(mantenimiento * 1.5) +
+      mantenimiento * 1.5 +
       "cc/hr";
     FLU.style.display = "block";
     MAN.style.display = "block";
   } else if (DATO > 30) {
+    ERROR.style.display = "none";
     superCorp = (DATO * 4 + 7) / (DATO + 90);
     supMQ = Math.round(superCorp * 1500);
     supDM = Math.round(superCorp * 2000);
@@ -48,5 +49,9 @@ CALCULAR.addEventListener("click", () => {
       Calculo 2000= <b>${supDM} </b>`;
     FLU.style.display = "none";
     MAN.style.display = "block";
+  } else {
+    ERROR.style.display = "block";
+    FLU.style.display = "none";
+    MAN.style.display = "none";
   }
 });
